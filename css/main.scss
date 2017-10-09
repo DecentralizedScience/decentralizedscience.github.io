@@ -8,6 +8,7 @@ $baseurl: '{{ site.baseurl }}/images';
 @import 'libs/functions';
 @import 'libs/mixins';
 @import 'font-awesome.min.css';
+@import 'modal-video.min.css';
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic');
 
 /*
@@ -1633,10 +1634,24 @@ $baseurl: '{{ site.baseurl }}/images';
 			header {
 				@include vendor('order', '1');
 				padding-right: 3em;
-				width: 70%;
+				width: 100%;
 
-				p {
-					color: inherit;
+				form {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;
+
+					div, input {
+						margin: 10px;
+					}
+
+					input {
+						max-width: 25em;
+					}
+
+					button {
+						min-width: 15em;
+					}
 				}
 			}
 
@@ -1832,3 +1847,5 @@ $baseurl: '{{ site.baseurl }}/images';
 			}
 		}
 	}
+
+.js-modal-video-dismiss-btn{ display: none }

@@ -8,8 +8,8 @@ description: |
 owner: Decentralized Science # or company name
 first_published: 2017 # if migrating another site, the year of your first publish
 email: your-email@domain.com
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+baseurl: "/alternative-web" # the subpath of your site, e.g. /blog
+url: "https://amanuenses.github.io" # the base hostname & protocol for your site
 social:
   twitter: https://twitter.com/DecentralizedScience
   github: https://github.com/DecentralizedScience

@@ -1763,7 +1763,7 @@ $baseurl: '{{ site.baseurl }}/images';
 			}
 		}
 
-		.copyright {
+		.copyright, .donate {
 			color: _palette(fg-light);
 			font-size: 0.8em;
 			letter-spacing: _size(letter-spacing-alt);

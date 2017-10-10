@@ -1624,6 +1624,48 @@ $baseurl: '{{ site.baseurl }}/images';
 		}
 	}
 
+	#team {
+		.team-members, .advisors {
+			text-align: center;
+			display: flex;
+			font-size: 0.6em;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			strong {
+				font-size: 1.5em;
+				line-height: 0;
+			}
+			> div {
+				display: flex;
+    		justify-content: center;
+    		align-items: center;
+    		flex-direction: column;
+				margin-bottom: 30px;
+				margin-right: 5px;
+				margin-left: 5px;
+				> img {
+					align-self: center;
+					margin-bottom: 15px;
+				}
+				&:after {
+				  content: "";
+				  flex: auto;
+				}
+			}
+		}
+		.advisors {
+			justify-content: center;
+			> div {
+				margin-left: 30px;
+				margin-right: 30px;
+			}
+		}
+		img {
+			max-width: 150px;
+			border-radius: 50%;
+		}
+	}
+
 /* CTA */
 
 	#subscribe {

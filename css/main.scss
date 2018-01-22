@@ -1625,6 +1625,9 @@ $baseurl: '{{ site.baseurl }}/images';
 	}
 
 	#team {
+		a {
+			border-bottom: none;
+		}
 		.team-members, .advisors {
 			text-align: center;
 			display: flex;

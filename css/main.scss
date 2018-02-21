@@ -1692,6 +1692,8 @@ $baseurl: '{{ site.baseurl }}/images';
 
 					input {
 						max-width: 25em;
+						display: inline;
+						height: auto;
 					}
 
 					button {

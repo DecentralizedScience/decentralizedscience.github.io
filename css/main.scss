@@ -1632,7 +1632,6 @@ $baseurl: '{{ site.baseurl }}/images';
 			text-align: center;
 			display: flex;
 			font-size: 0.6em;
-			justify-content: space-around;
 			flex-wrap: wrap;
 			strong {
 				font-size: 1.5em;
@@ -1640,6 +1639,8 @@ $baseurl: '{{ site.baseurl }}/images';
 			}
 			> div {
 				display: flex;
+				flex-grow: 1;
+				flex-basis: 24%;
     		justify-content: center;
     		align-items: center;
     		flex-direction: column;
@@ -1664,7 +1665,8 @@ $baseurl: '{{ site.baseurl }}/images';
 			}
 		}
 		img {
-			max-width: 150px;
+			width: 150px;
+			height: 150px;
 			border-radius: 50%;
 		}
 	}

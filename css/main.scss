@@ -1864,7 +1864,7 @@ $baseurl: '{{ site.baseurl }}/images';
 
 	body.landing {
 		#page-wrapper {
-			@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("#{$baseurl}/banner.jpg")'));
+			@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.6), rgba(0,0,0,0.8))', 'url("#{$baseurl}/banner.jpg")'));
 			background-attachment: fixed;
 			background-position: center center;
 			background-repeat: no-repeat;
@@ -1885,7 +1885,7 @@ $baseurl: '{{ site.baseurl }}/images';
 
 			#banner,
 			.wrapper.style4 {
-				@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("#{$baseurl}/banner.jpg")'));
+				@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.6), rgba(0,0,0,0.8))', 'url("#{$baseurl}/banner.jpg")'));
 				background-position: center center;
 				background-repeat: no-repeat;
 				background-size: cover;
@@ -1901,37 +1901,35 @@ $baseurl: '{{ site.baseurl }}/images';
 
 .paper {
   min-height: 850px; /* because paper image is usually 850x600px */
+  text-align: justify;
 }
 
 .letter {
   background: #fff;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  margin: 26px auto 0;
-  max-width: 550px;
-  min-height: 300px;
-  padding: 24px;
+  margin-left: 24px;
+  margin-bottom: 24px;
   position: relative;
-  width: 80%;
-
-&:before, &:after {
+  width: 40%;
+}
+.letter:before, .letter:after {
   content: "";
   height: 98%;
   position: absolute;
   width: 100%;
   z-index: -1;
 }
-&:before {
+.letter:before {
   background: #fafafa;
   box-shadow: 0 0 8px rgba(0,0,0,0.2);
   left: -5px;
   top: 4px;
   transform: rotate(-2.5deg);
 }
-&:after {
+.letter:after {
   background: #f6f6f6;
   box-shadow: 0 0 3px rgba(0,0,0,0.2);
   right: -3px;
   top: 1px;
   transform: rotate(1.4deg);
-}
 }

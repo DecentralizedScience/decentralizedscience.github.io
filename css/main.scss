@@ -1904,6 +1904,15 @@ $baseurl: '{{ site.baseurl }}/images';
   text-align: justify;
 }
 
+#paper {
+  margin-left: 30px;
+}
+
+
+body.is-mobile #paper {
+  display:none;
+}
+
 .letter {
   background: #fff;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);

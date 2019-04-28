@@ -1903,6 +1903,9 @@ $baseurl: '{{ site.baseurl }}/images';
   min-height: 850px; /* because paper image is usually 850x600px */
   text-align: justify;
   margin-bottom: 6em;
+  h4 {
+    text-align: left;
+  }
 }
 
 #paper {

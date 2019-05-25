@@ -64,5 +64,5 @@ plugins:
 jekyll_analytics:
 
   Piwik:                    # Add, if you want to track with Piwik
-    url: stats.teem.works  # Required - url to piwik installation without trailing /
-    siteId: "7"          # Required - replace with your piwik site id (Write id as string)
+    url: piwik.p2pmodels.eu  # Required - url to piwik installation without trailing /
+    siteId: "2"          # Required - replace with your piwik site id (Write id as string)

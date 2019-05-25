@@ -1950,3 +1950,7 @@ body.is-mobile {
   top: 1px;
   transform: rotate(1.4deg);
 }
+
+.content p {
+    max-width: 30em;
+}

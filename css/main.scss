@@ -1531,6 +1531,13 @@ $baseurl: '{{ site.baseurl }}/images';
 			}
 		}
 
+		p.small {
+			font-size: 12px;
+			font-family: 'Nunito Sans', sans-serif;
+			letter-spacing: normal;
+			text-transform: none;
+		}
+
 		.more {
 			@include vendor('transition', ('transform 0.75s ease', 'opacity 0.75s ease'));
 			@include vendor('transition-delay', '3.5s');
@@ -1599,6 +1606,16 @@ $baseurl: '{{ site.baseurl }}/images';
 			.more {
 				display: none;
 			}
+		}
+
+		#flag {
+			height: 65px;
+			margin: 30px 30px 0px 30px;
+		}
+		
+		#im_ledger {
+			height: 65px;
+			margin: 0px 5px;
 		}
 	}
 
@@ -1953,14 +1970,4 @@ body.is-mobile {
 
 .content p {
     max-width: 30em;
-}
-
-#flag {
-	height: 65px;
-	margin: 30px 30px 0px 30px;
-}
-
-#im_ledger {
-	height: 65px;
-	margin: 0px 5px;
 }
